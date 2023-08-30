@@ -112,16 +112,19 @@
           <p class="my-3">Phone:&nbsp; (530) 754-3509</p>
         </div>
         <div class="my-3 col-lg-4 col-md-6" style="">
-          <form>
-            <p> Nombre</p>
+          <form action="mailto:amiperez@ucdavis.edu" method="post" enctype="text/plain">
+            <p><b>Nombre</b></p>
             <fieldset class="form-group my-3">
-              <input type="nombre" class="form-control" id="Nombre" placeholder="Nombre"> </fieldset>
-            <p>Email</p>
+              <input type="nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Name"> </fieldset>
+            <p><b>Email</b></p>
             <fieldset class="form-group my-3">
-              <input type="email" class="form-control" id="Input Email" placeholder="Email"> </fieldset>
-            <p>Mensaje</p>
+              <input type="email" class="form-control" id="Input Email" placeholder="Email" name="Email"> 
+            </fieldset>
+            <p><b>Mensaje</b></p>
             <fieldset class="form-group my-3">
-              <input type="message" class="form-control form-control-lg" id="Input Message" placeholder="Message"> </fieldset>
+              <textarea name="message" rows="5" class="form-control form-control-lg" id="Input Message" placeholder="Your Message" required>
+				  </textarea> 
+			</fieldset>
             <button type="submit" class="btn btn-outline-primary">Submit</button>
           </form>
         </div>
